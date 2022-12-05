@@ -1,18 +1,22 @@
 import React from 'react';
 
-function NavBar() {
+function NavBar({ currentPage, handlePageChange }) {
     return (
-        <header className="d-flex justify-content-between m-2">
+        <header className="d-flex justify-content-between">
             <h1>Nichole Guan</h1>
             <nav>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">About</a>
+                <ul className="nav">
+                    <li className="nav-item">
+                        <a
+                            href="/"
+                            onClick={() => handlePageChange('About')}
+                            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                        >About</a>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                         <a className="nav-link" href="/">Portfolio</a>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                         <a className="nav-link" href="/">Contact</a>
                     </li>
                     <li class="nav-item">
