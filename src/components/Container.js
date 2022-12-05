@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import NavBar from './Navbar';
+import Footer from './Footer';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 
@@ -23,8 +24,9 @@ export default function Container() {
 
     return (
         <div className="m-2">
-            <NavBar currentPage={currentPage} handlePageChange={handlePageChange}/>
+            <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
+            <Footer />
         </div>
     );
 }
