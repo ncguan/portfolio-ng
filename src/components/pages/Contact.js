@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { validateEmail } from '../../utils/helper'
 
 function Contact() {
     const [name, setName] = useState('');
@@ -27,10 +28,10 @@ function Contact() {
             setErrorMessage('Name is required');
             return;
         }
-        // if (!validateEmail) {
-        //     setErrorMessage('Email is invalid');
-        //     return;
-        // }
+        if (!validateEmail(email)) {
+            setErrorMessage('Email is invalid');
+            return;
+        }
         if (!message) {
             setErrorMessage('Message is required');
             return;
@@ -44,13 +45,13 @@ function Contact() {
     }
 
     function nameRequired(){
-        alert('Name is required')
+        setErrorMessage('Name is required');
     }
     function emailRequired(){
-        alert('Email is required')
+        setErrorMessage('Email is required');
     }
     function messageRequired(){
-        alert('Message is required')
+        setErrorMessage('Message is required');
     }
 
     return (
