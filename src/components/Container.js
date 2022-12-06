@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/style.css';
 import NavBar from './Navbar';
 import Footer from './Footer';
 import About from './pages/About';
@@ -25,7 +26,7 @@ export default function Container() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className="m-2">
+        <div>
             <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <Footer />

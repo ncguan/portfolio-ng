@@ -2,10 +2,10 @@ import React from 'react';
 
 function NavBar({ currentPage, handlePageChange }) {
     return (
-        <header className="d-flex justify-content-between">
+        <header className="d-flex justify-content-between p-3">
             <h1>Nichole Guan</h1>
             <nav>
-                <ul className="nav">
+                <ul className="nav nav-pills">
                     <li className="nav-item">
                         <a
                             href="#about-me"

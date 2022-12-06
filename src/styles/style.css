@@ -1,0 +1,88 @@
+#root{
+    font-family: 'MontserratRegular';
+    background-color: #faebd7
+}
+
+h2 {
+    font-family: 'BebasNeueRegular';
+    color: #191019;
+    border-bottom: solid;
+    border-color: #06D6A0;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+/* navbar styling */
+
+header{
+    background-color: #191019;
+}
+
+h1{
+    font-family:'BebasNeueRegular';
+    color: #06D6A0;
+    padding-left: 25px;
+}
+
+a.nav-link{
+    color: #f7f5f2 !important;
+}
+
+a.active{
+    color:#191019 !important;
+    background-color: #06D6A0 !important;
+}
+
+/* portfolio styling */
+
+.project {
+    position: relative;
+}
+
+.project-links {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    display: none;
+    background-color: #06D6A0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+a.project-link{
+    color:#191019 !important;
+}
+
+.project:hover .project-links{
+    display: block;
+}
+
+/* Contact styling */
+.error-text{
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+button {
+    background-color: #06D6A0 !important;
+    color: #191019 !important;
+}
+
+/* Resume styling */
+h3{
+    font-family: 'BebasNeueRegular';
+    color: #191019;
+}
+li{
+    list-style: none;
+    padding: 3px;
+}
+
+.proficienciesList{
+    border-style: solid;
+    border-color: #06D6A0 !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
