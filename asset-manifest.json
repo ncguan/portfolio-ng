@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-ng/static/css/main.aae33d1d.css",
-    "main.js": "/portfolio-ng/static/js/main.884be433.js",
+    "main.js": "/portfolio-ng/static/js/main.ffbe235f.js",
     "static/media/weather-dashboard.jpeg": "/portfolio-ng/static/media/weather-dashboard.8da7eac708afc3f42f67.jpeg",
     "static/media/work-day-scheduler.jpeg": "/portfolio-ng/static/media/work-day-scheduler.ffdb0487a758784afa33.jpeg",
     "static/media/nichole-resume-in-progress.pdf": "/portfolio-ng/static/media/nichole-resume-in-progress.096e3c61f33c0eb0e91b.pdf",
@@ -11,10 +11,10 @@
     "static/media/bills.jpeg": "/portfolio-ng/static/media/bills.8b21df8b0c92819b72a1.jpeg",
     "index.html": "/portfolio-ng/index.html",
     "main.aae33d1d.css.map": "/portfolio-ng/static/css/main.aae33d1d.css.map",
-    "main.884be433.js.map": "/portfolio-ng/static/js/main.884be433.js.map"
+    "main.ffbe235f.js.map": "/portfolio-ng/static/js/main.ffbe235f.js.map"
   },
   "entrypoints": [
     "static/css/main.aae33d1d.css",
-    "static/js/main.884be433.js"
+    "static/js/main.ffbe235f.js"
   ]
 }
