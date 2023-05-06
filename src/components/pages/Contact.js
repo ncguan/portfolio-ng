@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helper'
+import { validateEmail } from '../../utils/helper';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -38,7 +39,19 @@ function Contact() {
             return;
         }
 
+        let form = {
+            name: name,
+            email: email,
+            message: message
+        }
+
         alert('Message sent');
+        emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form, process.env.REACT_APP_API_KEY)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
 
         setName('');
         setEmail('');
